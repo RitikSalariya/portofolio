@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+
+<!-- Background Animation -->
+<canvas id="bg"></canvas>
+
+<nav class="navbar">
+
+  <div class="logo-box">RS</div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <div class="nav-right" id="nav-menu">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+
+    <a href="imgs/RITIK_RESUME.pdf" class="resume-btn" download>
+      Resume
+    </a>
+  </div>
+
+</nav>
+
+<!-- Hero -->
+ 
+<section class="hero">
+
+  <div class="hero-left">
+    <h3 class="subtitle">Hi, I’m</h3>
+
+    <h1 class="main-name">Ritik Salariya</h1>
+
+    <p class="tagline">
+      Building intelligent solutions with 
+      <span>Machine Learning</span> & <span>Python</span>
+    </p>
+
+    <p>Final Year Student | ML Enthusiast | Open to Internships</p>
+
+    <!-- <p id="typing" class="typing-text"></p> -->
+
+    <button margin="20px 0"><a href="#contact">Contact Me</a></button>
+  </div>
+
+  <div class="hero-right">
+    <img src="imgs/4j.jpg" alt="profile">
+    <p id="typing" class="typing-text"></p>
+  </div>
+
+</section>
+<!-- About -->
+<section id="about" class="section">
+  <h2>ABOUT ME</h2>
+  <p>
+    Hi, I'm a tech enthusiast who loves turning ideas into reality using 
+    Python and Machine Learning. From building intelligent models to designing 
+    interactive web applications, I enjoy every part of the development process.
+
+    I believe in continuous learning and constantly upgrading my skills to stay 
+    ahead in the tech world. My goal is to become a skilled developer who creates 
+    impactful and innovative solutions.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section dark">
+  <h2>SKILLS</h2>
+
+  <div class="skills">
+    <div>Python</div>
+    <div>Machine Learning</div>
+    <div>DSA</div>
+    <div>Django</div>
+    <div>Flask</div>
+    <!-- <div>SQL</div> -->
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <h2>PROJECTS</h2>
+
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <a href="https://github.com/RitikSalariya/Hospital-management-System" target="_blank" class="project-card">
+    <img src="prjimg/HMhm.jpg" alt="Hospital Management System">
+
+    <div class="overlay">
+        <h3>Hospital Management System</h3>
+        <p>Using Python and Tkinter</p>
+    </div>
+    </a>
+    <!-- Project 2 -->
+    <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-card">
+      <img src="prjimg/PT0.jpg" alt="Portfolio Website">
+
+      <div class="overlay">
+        <h3>Portfolio Website</h3>
+        <p>Responsive website using HTML, CSS, JS</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section dark" id="contact">
+  <h2>CONTACT</h2>
+
+  <form action="https://formspree.io/f/mpqykwog" method="POST" class="contact-form">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+  <p id="success-msg" style="display:none; color:#00f5ff;">
+    ✅ Message sent successfully!
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 Ritik Salariya. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
