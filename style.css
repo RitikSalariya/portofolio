@@ -480,3 +480,35 @@ footer {
   font-size: 20px;
   color: #aaa;
 }
+
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;   /* 🔥 center fix */
+  align-items: center;
+  gap: 25px;
+}
+
+/* Circle icons */
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #00f5ff;
+  color: #00f5ff;
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  background: #00f5ff;
+  color: black;
+  box-shadow: 0 0 15px #00f5ff, 0 0 30px #00f5ff;
+  transform: translateY(-5px);
+}
